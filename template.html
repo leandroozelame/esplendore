@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Template with Carousel</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        header, footer {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        body {
+            font-family: 'avenir-lt-w01_85-heavy1475544', 'avenir-lt-w05_85-heavy', sans-serif;
+        }
+
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .section-odd {
+            background-color: #f8f9fa;
+			width: 100%;
+        }
+
+        .section-even {
+            background-color: #e9ecef;
+			width: 100%;
+        }
+
+        .carousel-item img {
+            height: 100vh; /* Full height for the viewport */
+            object-fit: cover; /* Maintain image proportions */
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo translúcido */
+            bottom: 10%; /* 10% acima da margem final da section */
+            padding: 20px;
+            width: 50%; /* Define a largura como 50% */
+            z-index: 3; /* Certifique-se de que o z-index seja maior que o do carousel */
+        }
+
+        .carousel-inner img {
+            height: 672px;
+            width: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+
+        .btn-whatsapp {
+            margin: 0px 4px 0px 0px;
+            letter-spacing: 0.1em;
+            color: #EFECEA;
+            font-family: avenir-lt-w01_35-light1475496, sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            background-color: #25D366; /* Cor de fundo do WhatsApp */
+            border: none; /* Remover borda */
+            padding: 10px 20px; /* Espaçamento interno */
+            border-radius: 5px; /* Bordas arredondadas */
+            cursor: pointer; /* Cursor de ponteiro */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Welcome to My Website</h1>
+        <p>Your catchy subtitle here</p>
+    </div>
+</header>
+
+<main>
+    <!-- Section 1 with Full Width Carousel -->
+	<section class="section-odd">
+        <div class="container-fluid p-0" style="width: 100%; position: relative;">
+            <div class="position-absolute overlay">
+                <div class="container text-white">
+                    <div class="row">
+                        <div class="col-5"></div>
+                        <div class="col text-start">
+                            <h2 style="z-index: 2; font-size: 50px; font-family: sans-serif;">Conheça seu novo lar!</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"></div>
+                        <div class="col text-start">
+                            <h2 class="text-white" style="z-index: 2;">Taguatinga Norte - QI 12</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"></div>
+                        <div class="col text-start">
+                            <button class="btn btn-whatsapp">Dúvidas? Chama no Zap</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="fullWidthCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="c1_1.png" class="d-block w-100" alt="Image 1" style="height: 672px; width: 1903px; object-fit: cover; object-position: 50% 50%;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="c1_2.jpg" class="d-block w-100" alt="Image 2" style="height: 672px; width: 1903px; object-fit: cover; object-position: 50% 50%;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="c1_3.jpg" class="d-block w-100" alt="Image 3" style="height: 672px; width: 1903px; object-fit: cover; object-position: 50% 50%;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="c1_4.jpg" class="d-block w-100" alt="Image 4" style="height: 672px; width: 1903px; object-fit: cover; object-position: 50% 50%;">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#fullWidthCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#fullWidthCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="section-even">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p class="p-0 m-0" style="font-size: 22px; letter-spacing:normal; font: normal normal bold 22px / 1.4em avenir-lt-w01_35-light1475496, sans-serif;; color: rgb(var(--color_15));">APARTAMENTOS DE</p>
+                    <p class="p-0" style="font-size: 50px; letter-spacing:normal; font-family: avenir-lt-w01_85-heavy1475544, avenir-lt-w05_85-heavy, sans-serif; color:#8C776C;">2 E 3 QUARTOS</p>
+                    <div class="row">
+                        <div class="col text-end">
+                            <img alt="seta-01.png" fetchpriority="high" height="16" sizes="" src="data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAAGNbWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAsaWxvYwAAAABEAAACAAEAAAABAAACjwAAARwAAgAAAAEAAAG1AAAA2gAAAEJpaW5mAAAAAAACAAAAGmluZmUCAAAAAAEAAGF2MDFDb2xvcgAAAAAaaW5mZQIAAAAAAgAAYXYwMUFscGhhAAAAABppcmVmAAAAAAAAAA5hdXhsAAIAAQABAAAAw2lwcnAAAACdaXBjbwAAABRpc3BlAAAAAAAAABoAAAAQAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQAMAAAAABNjb2xybmNseAACAAIAAoAAAAAOcGl4aQAAAAABCAAAAAxhdjFDgQAcAAAAADhhdXhDAAAAAHVybjptcGVnOm1wZWdCOmNpY3A6c3lzdGVtczphdXhpbGlhcnk6YWxwaGEAAAAAHmlwbWEAAAAAAAAAAgABBAECgwQAAgQBBYYHAAAB/m1kYXQSAAoJAAAAAh582vkqMsoBEAC2AOOJBIDtlw0tKYenc1eQzEuYrbnjMpvzvGRgNVdOPcTtEpVHi5IuI+bAbl73NleKqBFFFPLsnshSnj70RXGOs9H2UJqx0TD5/x2q43syHdFgZ84wFTyKrQSO9ShXk893Evflpzdi/MtM2+hl/Q4Lbm1AzD+UIFL3RiXRAlRARhnWwqIZHD7xVJhr4LpJX5dd6NmgkDFW0y7XaL1T3B4V0sTKEvUVRTVMwDAw7ClJQ3iFptNX/gzbXxbGLpk19qywTCWLlGDNvBIACgoAAAACHnza+QhAMosCEACgABhhhiQQSO5kX/XTkHSnhZUnLZ0XE1f4fiVv4y3RjsH6HdOHVSnWO0O67/gJ7xoY8Cs34H8s1rUeDgZwUdI1C4iHLOAKMf7cO5tTY+0dOSaE2JWACWh88YTaUe6j+sIQJ4Ynfb9kaj+LxdyMOOgGPtGSDWXA//Mah5+EDS6Nw0fR0pyf5pKL9K5OMkwhjh1WJ40cEAi3DuP62r62cy+r9Mzul1prJ5KUf2u33J/iopgS6dv/OdKMuYWpZpT2H+cjotHHCOpEVg1yExiqzk36rif+wKtGAR8CRxkc5WuSl9EaiQtiZ2jZDec8JA/tztzCZnxb5yKYEt6b6a6wYhvIFS8eG38ptIGg" srcset="" style="width:26px;height:16px;object-fit:cover" width="26">
+                        </div>
+                        <div class="col text-start">
+                            <p>Apartamentos de 2 quartos com uma suíte e varanda de até 58,66m²</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-end">
+                            <img alt="seta-01.png" fetchpriority="high" height="16" sizes="" src="data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAAGNbWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAsaWxvYwAAAABEAAACAAEAAAABAAACjwAAARwAAgAAAAEAAAG1AAAA2gAAAEJpaW5mAAAAAAACAAAAGmluZmUCAAAAAAEAAGF2MDFDb2xvcgAAAAAaaW5mZQIAAAAAAgAAYXYwMUFscGhhAAAAABppcmVmAAAAAAAAAA5hdXhsAAIAAQABAAAAw2lwcnAAAACdaXBjbwAAABRpc3BlAAAAAAAAABoAAAAQAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQAMAAAAABNjb2xybmNseAACAAIAAoAAAAAOcGl4aQAAAAABCAAAAAxhdjFDgQAcAAAAADhhdXhDAAAAAHVybjptcGVnOm1wZWdCOmNpY3A6c3lzdGVtczphdXhpbGlhcnk6YWxwaGEAAAAAHmlwbWEAAAAAAAAAAgABBAECgwQAAgQBBYYHAAAB/m1kYXQSAAoJAAAAAh582vkqMsoBEAC2AOOJBIDtlw0tKYenc1eQzEuYrbnjMpvzvGRgNVdOPcTtEpVHi5IuI+bAbl73NleKqBFFFPLsnshSnj70RXGOs9H2UJqx0TD5/x2q43syHdFgZ84wFTyKrQSO9ShXk893Evflpzdi/MtM2+hl/Q4Lbm1AzD+UIFL3RiXRAlRARhnWwqIZHD7xVJhr4LpJX5dd6NmgkDFW0y7XaL1T3B4V0sTKEvUVRTVMwDAw7ClJQ3iFptNX/gzbXxbGLpk19qywTCWLlGDNvBIACgoAAAACHnza+QhAMosCEACgABhhhiQQSO5kX/XTkHSnhZUnLZ0XE1f4fiVv4y3RjsH6HdOHVSnWO0O67/gJ7xoY8Cs34H8s1rUeDgZwUdI1C4iHLOAKMf7cO5tTY+0dOSaE2JWACWh88YTaUe6j+sIQJ4Ynfb9kaj+LxdyMOOgGPtGSDWXA//Mah5+EDS6Nw0fR0pyf5pKL9K5OMkwhjh1WJ40cEAi3DuP62r62cy+r9Mzul1prJ5KUf2u33J/iopgS6dv/OdKMuYWpZpT2H+cjotHHCOpEVg1yExiqzk36rif+wKtGAR8CRxkc5WuSl9EaiQtiZ2jZDec8JA/tztzCZnxb5yKYEt6b6a6wYhvIFS8eG38ptIGg" srcset="" style="width:26px;height:16px;object-fit:cover" width="26">
+                        </div>
+                        <div class="col text-start">
+                            <p>Apartamentos de 3 quartos com uma suíte e varanda de até 65,61m²</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-end">
+                            <img alt="seta-01.png" fetchpriority="high" height="16" sizes="" src="data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAAGNbWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAsaWxvYwAAAABEAAACAAEAAAABAAACjwAAARwAAgAAAAEAAAG1AAAA2gAAAEJpaW5mAAAAAAACAAAAGmluZmUCAAAAAAEAAGF2MDFDb2xvcgAAAAAaaW5mZQIAAAAAAgAAYXYwMUFscGhhAAAAABppcmVmAAAAAAAAAA5hdXhsAAIAAQABAAAAw2lwcnAAAACdaXBjbwAAABRpc3BlAAAAAAAAABoAAAAQAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQAMAAAAABNjb2xybmNseAACAAIAAoAAAAAOcGl4aQAAAAABCAAAAAxhdjFDgQAcAAAAADhhdXhDAAAAAHVybjptcGVnOm1wZWdCOmNpY3A6c3lzdGVtczphdXhpbGlhcnk6YWxwaGEAAAAAHmlwbWEAAAAAAAAAAgABBAECgwQAAgQBBYYHAAAB/m1kYXQSAAoJAAAAAh582vkqMsoBEAC2AOOJBIDtlw0tKYenc1eQzEuYrbnjMpvzvGRgNVdOPcTtEpVHi5IuI+bAbl73NleKqBFFFPLsnshSnj70RXGOs9H2UJqx0TD5/x2q43syHdFgZ84wFTyKrQSO9ShXk893Evflpzdi/MtM2+hl/Q4Lbm1AzD+UIFL3RiXRAlRARhnWwqIZHD7xVJhr4LpJX5dd6NmgkDFW0y7XaL1T3B4V0sTKEvUVRTVMwDAw7ClJQ3iFptNX/gzbXxbGLpk19qywTCWLlGDNvBIACgoAAAACHnza+QhAMosCEACgABhhhiQQSO5kX/XTkHSnhZUnLZ0XE1f4fiVv4y3RjsH6HdOHVSnWO0O67/gJ7xoY8Cs34H8s1rUeDgZwUdI1C4iHLOAKMf7cO5tTY+0dOSaE2JWACWh88YTaUe6j+sIQJ4Ynfb9kaj+LxdyMOOgGPtGSDWXA//Mah5+EDS6Nw0fR0pyf5pKL9K5OMkwhjh1WJ40cEAi3DuP62r62cy+r9Mzul1prJ5KUf2u33J/iopgS6dv/OdKMuYWpZpT2H+cjotHHCOpEVg1yExiqzk36rif+wKtGAR8CRxkc5WuSl9EaiQtiZ2jZDec8JA/tztzCZnxb5yKYEt6b6a6wYhvIFS8eG38ptIGg" srcset="" style="width:26px;height:16px;object-fit:cover" width="26">
+                        </div>
+                        <div class="col text-start">
+                            <p>Sala de estar/jantar</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-end">
+                            <img alt="seta-01.png" fetchpriority="high" height="16" sizes="" src="data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAAGNbWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAsaWxvYwAAAABEAAACAAEAAAABAAACjwAAARwAAgAAAAEAAAG1AAAA2gAAAEJpaW5mAAAAAAACAAAAGmluZmUCAAAAAAEAAGF2MDFDb2xvcgAAAAAaaW5mZQIAAAAAAgAAYXYwMUFscGhhAAAAABppcmVmAAAAAAAAAA5hdXhsAAIAAQABAAAAw2lwcnAAAACdaXBjbwAAABRpc3BlAAAAAAAAABoAAAAQAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQAMAAAAABNjb2xybmNseAACAAIAAoAAAAAOcGl4aQAAAAABCAAAAAxhdjFDgQAcAAAAADhhdXhDAAAAAHVybjptcGVnOm1wZWdCOmNpY3A6c3lzdGVtczphdXhpbGlhcnk6YWxwaGEAAAAAHmlwbWEAAAAAAAAAAgABBAECgwQAAgQBBYYHAAAB/m1kYXQSAAoJAAAAAh582vkqMsoBEAC2AOOJBIDtlw0tKYenc1eQzEuYrbnjMpvzvGRgNVdOPcTtEpVHi5IuI+bAbl73NleKqBFFFPLsnshSnj70RXGOs9H2UJqx0TD5/x2q43syHdFgZ84wFTyKrQSO9ShXk893Evflpzdi/MtM2+hl/Q4Lbm1AzD+UIFL3RiXRAlRARhnWwqIZHD7xVJhr4LpJX5dd6NmgkDFW0y7XaL1T3B4V0sTKEvUVRTVMwDAw7ClJQ3iFptNX/gzbXxbGLpk19qywTCWLlGDNvBIACgoAAAACHnza+QhAMosCEACgABhhhiQQSO5kX/XTkHSnhZUnLZ0XE1f4fiVv4y3RjsH6HdOHVSnWO0O67/gJ7xoY8Cs34H8s1rUeDgZwUdI1C4iHLOAKMf7cO5tTY+0dOSaE2JWACWh88YTaUe6j+sIQJ4Ynfb9kaj+LxdyMOOgGPtGSDWXA//Mah5+EDS6Nw0fR0pyf5pKL9K5OMkwhjh1WJ40cEAi3DuP62r62cy+r9Mzul1prJ5KUf2u33J/iopgS6dv/OdKMuYWpZpT2H+cjotHHCOpEVg1yExiqzk36rif+wKtGAR8CRxkc5WuSl9EaiQtiZ2jZDec8JA/tztzCZnxb5yKYEt6b6a6wYhvIFS8eG38ptIGg" srcset="" style="width:26px;height:16px;object-fit:cover" width="26">
+                        </div>
+                        <div class="col text-start">
+                            <p>Banheiro social</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-end">
+                            <img alt="seta-01.png" fetchpriority="high" height="16" sizes="" src="data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAAGNbWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAsaWxvYwAAAABEAAACAAEAAAABAAACjwAAARwAAgAAAAEAAAG1AAAA2gAAAEJpaW5mAAAAAAACAAAAGmluZmUCAAAAAAEAAGF2MDFDb2xvcgAAAAAaaW5mZQIAAAAAAgAAYXYwMUFscGhhAAAAABppcmVmAAAAAAAAAA5hdXhsAAIAAQABAAAAw2lwcnAAAACdaXBjbwAAABRpc3BlAAAAAAAAABoAAAAQAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQAMAAAAABNjb2xybmNseAACAAIAAoAAAAAOcGl4aQAAAAABCAAAAAxhdjFDgQAcAAAAADhhdXhDAAAAAHVybjptcGVnOm1wZWdCOmNpY3A6c3lzdGVtczphdXhpbGlhcnk6YWxwaGEAAAAAHmlwbWEAAAAAAAAAAgABBAECgwQAAgQBBYYHAAAB/m1kYXQSAAoJAAAAAh582vkqMsoBEAC2AOOJBIDtlw0tKYenc1eQzEuYrbnjMpvzvGRgNVdOPcTtEpVHi5IuI+bAbl73NleKqBFFFPLsnshSnj70RXGOs9H2UJqx0TD5/x2q43syHdFgZ84wFTyKrQSO9ShXk893Evflpzdi/MtM2+hl/Q4Lbm1AzD+UIFL3RiXRAlRARhnWwqIZHD7xVJhr4LpJX5dd6NmgkDFW0y7XaL1T3B4V0sTKEvUVRTVMwDAw7ClJQ3iFptNX/gzbXxbGLpk19qywTCWLlGDNvBIACgoAAAACHnza+QhAMosCEACgABhhhiQQSO5kX/XTkHSnhZUnLZ0XE1f4fiVv4y3RjsH6HdOHVSnWO0O67/gJ7xoY8Cs34H8s1rUeDgZwUdI1C4iHLOAKMf7cO5tTY+0dOSaE2JWACWh88YTaUe6j+sIQJ4Ynfb9kaj+LxdyMOOgGPtGSDWXA//Mah5+EDS6Nw0fR0pyf5pKL9K5OMkwhjh1WJ40cEAi3DuP62r62cy+r9Mzul1prJ5KUf2u33J/iopgS6dv/OdKMuYWpZpT2H+cjotHHCOpEVg1yExiqzk36rif+wKtGAR8CRxkc5WuSl9EaiQtiZ2jZDec8JA/tztzCZnxb5yKYEt6b6a6wYhvIFS8eG38ptIGg" srcset="" style="width:26px;height:16px;object-fit:cover" width="26">
+                        </div>
+                        <div class="col text-start">
+                            <p>Vaga de garagem</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-end">
+                            <img alt="seta-01.png" fetchpriority="high" height="16" sizes="" src="data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAAGNbWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAsaWxvYwAAAABEAAACAAEAAAABAAACjwAAARwAAgAAAAEAAAG1AAAA2gAAAEJpaW5mAAAAAAACAAAAGmluZmUCAAAAAAEAAGF2MDFDb2xvcgAAAAAaaW5mZQIAAAAAAgAAYXYwMUFscGhhAAAAABppcmVmAAAAAAAAAA5hdXhsAAIAAQABAAAAw2lwcnAAAACdaXBjbwAAABRpc3BlAAAAAAAAABoAAAAQAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQAMAAAAABNjb2xybmNseAACAAIAAoAAAAAOcGl4aQAAAAABCAAAAAxhdjFDgQAcAAAAADhhdXhDAAAAAHVybjptcGVnOm1wZWdCOmNpY3A6c3lzdGVtczphdXhpbGlhcnk6YWxwaGEAAAAAHmlwbWEAAAAAAAAAAgABBAECgwQAAgQBBYYHAAAB/m1kYXQSAAoJAAAAAh582vkqMsoBEAC2AOOJBIDtlw0tKYenc1eQzEuYrbnjMpvzvGRgNVdOPcTtEpVHi5IuI+bAbl73NleKqBFFFPLsnshSnj70RXGOs9H2UJqx0TD5/x2q43syHdFgZ84wFTyKrQSO9ShXk893Evflpzdi/MtM2+hl/Q4Lbm1AzD+UIFL3RiXRAlRARhnWwqIZHD7xVJhr4LpJX5dd6NmgkDFW0y7XaL1T3B4V0sTKEvUVRTVMwDAw7ClJQ3iFptNX/gzbXxbGLpk19qywTCWLlGDNvBIACgoAAAACHnza+QhAMosCEACgABhhhiQQSO5kX/XTkHSnhZUnLZ0XE1f4fiVv4y3RjsH6HdOHVSnWO0O67/gJ7xoY8Cs34H8s1rUeDgZwUdI1C4iHLOAKMf7cO5tTY+0dOSaE2JWACWh88YTaUe6j+sIQJ4Ynfb9kaj+LxdyMOOgGPtGSDWXA//Mah5+EDS6Nw0fR0pyf5pKL9K5OMkwhjh1WJ40cEAi3DuP62r62cy+r9Mzul1prJ5KUf2u33J/iopgS6dv/OdKMuYWpZpT2H+cjotHHCOpEVg1yExiqzk36rif+wKtGAR8CRxkc5WuSl9EaiQtiZ2jZDec8JA/tztzCZnxb5yKYEt6b6a6wYhvIFS8eG38ptIGg" srcset="" style="width:26px;height:16px;object-fit:cover" width="26">
+                        </div>
+                        <div class="col text-start">
+                            <p>Laje técnica para instalação de ar condicionado</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-end">
+                            <img alt="seta-01.png" fetchpriority="high" height="16" sizes="" src="data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAAGNbWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAsaWxvYwAAAABEAAACAAEAAAABAAACjwAAARwAAgAAAAEAAAG1AAAA2gAAAEJpaW5mAAAAAAACAAAAGmluZmUCAAAAAAEAAGF2MDFDb2xvcgAAAAAaaW5mZQIAAAAAAgAAYXYwMUFscGhhAAAAABppcmVmAAAAAAAAAA5hdXhsAAIAAQABAAAAw2lwcnAAAACdaXBjbwAAABRpc3BlAAAAAAAAABoAAAAQAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQAMAAAAABNjb2xybmNseAACAAIAAoAAAAAOcGl4aQAAAAABCAAAAAxhdjFDgQAcAAAAADhhdXhDAAAAAHVybjptcGVnOm1wZWdCOmNpY3A6c3lzdGVtczphdXhpbGlhcnk6YWxwaGEAAAAAHmlwbWEAAAAAAAAAAgABBAECgwQAAgQBBYYHAAAB/m1kYXQSAAoJAAAAAh582vkqMsoBEAC2AOOJBIDtlw0tKYenc1eQzEuYrbnjMpvzvGRgNVdOPcTtEpVHi5IuI+bAbl73NleKqBFFFPLsnshSnj70RXGOs9H2UJqx0TD5/x2q43syHdFgZ84wFTyKrQSO9ShXk893Evflpzdi/MtM2+hl/Q4Lbm1AzD+UIFL3RiXRAlRARhnWwqIZHD7xVJhr4LpJX5dd6NmgkDFW0y7XaL1T3B4V0sTKEvUVRTVMwDAw7ClJQ3iFptNX/gzbXxbGLpk19qywTCWLlGDNvBIACgoAAAACHnza+QhAMosCEACgABhhhiQQSO5kX/XTkHSnhZUnLZ0XE1f4fiVv4y3RjsH6HdOHVSnWO0O67/gJ7xoY8Cs34H8s1rUeDgZwUdI1C4iHLOAKMf7cO5tTY+0dOSaE2JWACWh88YTaUe6j+sIQJ4Ynfb9kaj+LxdyMOOgGPtGSDWXA//Mah5+EDS6Nw0fR0pyf5pKL9K5OMkwhjh1WJ40cEAi3DuP62r62cy+r9Mzul1prJ5KUf2u33J/iopgS6dv/OdKMuYWpZpT2H+cjotHHCOpEVg1yExiqzk36rif+wKtGAR8CRxkc5WuSl9EaiQtiZ2jZDec8JA/tztzCZnxb5yKYEt6b6a6wYhvIFS8eG38ptIGg" srcset="" style="width:26px;height:16px;object-fit:cover" width="26">
+                        </div>
+                        <div class="col text-start">
+                            <p>Unidades entregues com fechadura eletrônica</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col text-start p-0" >
+                            <button class="btn btn-whatsapp">Dúvidas? Chama no Zap</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-0 text-start position-relative">
+                    <div class="d-flex flex-column align-items-start">
+                        <img src="fundo-03.png" class="img-fluid" style="position: relative; z-index: 1;">
+                        <p style="position: absolute; z-index: 3; top: 17%; left: 5%; transform: translateY(-50%);">Finais 01, 02, 07 e 08</p>
+                        <img src="rosa-dos-ventos-03.png" class="img-fluid" style="position: absolute; z-index: 3; top: 17%; left: 36%; transform: translateY(-50%);">
+                        <img src="Planta-Humanizada-Decorado-Final-MODIFICADO-2.png" class="img-fluid" style="position: absolute; z-index: 2; top: 68%; left: -11%; transform: translateY(-50%);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="section-odd">
+        <div class="container">
+            <h2>Section 3</h2>
+            <p>Content for section 3 goes here.</p>
+        </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="section-even">
+        <div class="container">
+            <h2>Section 4</h2>
+            <p>Content for section 4 goes here.</p>
+        </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="section-odd">
+        <div class="container">
+            <h2>Section 5</h2>
+            <p>Content for section 5 goes here.</p>
+        </div>
+    </section>
+
+    <!-- Section 6 -->
+    <section class="section-even">
+        <div class="container">
+            <h2>Section 6</h2>
+            <p>Content for section 6 goes here.</p>
+        </div>
+    </section>
+
+    <!-- Section 7 -->
+    <section class="section-odd">
+        <div class="container">
+            <h2>Section 7</h2>
+            <p>Content for section 7 goes here.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 My Website. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
